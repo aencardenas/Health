@@ -53,7 +53,7 @@ def classifyPacients(dictionary):
 
 
 if __name__ == '__main__':
-    data = readCsv(r'C:\Users\USUARIO\Documents\Python\__pycache__\app\healthcareGlucose.csv')
+    data = readCsv('./healthcareGlucose.csv')
     gender = input('Type the gender(Male/Female) to consult: ')
     dictionary = avgGlucoseLevel(data,gender)
     labels, values = classifyPacients(dictionary)
